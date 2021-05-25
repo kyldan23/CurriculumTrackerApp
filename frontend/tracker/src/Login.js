@@ -1,7 +1,10 @@
 import React from 'react';
+import './Login.css';
 
 export default function Login() {
   return(
-    <h2>login page</h2>
+    <header>Plextech Full-Stack Curriculum
+      <h1>Login</h1>
+    </header>
   );
 }
