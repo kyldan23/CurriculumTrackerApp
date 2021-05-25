@@ -1,8 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './Home.css';
 
-function App() {
-  return (
+export default function Home() {
+  return(
     <body>
     <header> Plextech Full-Stack Curriculum Course Schedule 
     <div class="grid-container">
@@ -53,5 +53,3 @@ function App() {
   </body>
   );
 }
-
-export default App;
