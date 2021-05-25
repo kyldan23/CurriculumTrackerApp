@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css';
-
+import YtTemplate from './YtTemplate'
+import YouTube from 'react-youtube';
 export default function Home() {
   return(
     <body>
@@ -11,7 +12,9 @@ export default function Home() {
       <div class="grid-label">Video</div>
       <div class="grid-item">1</div>
       <div class="grid-item">HTML</div>
-      <div class="grid-item">6</div>
+      <div class="grid-item">
+        <YtTemplate vidId = 'TlB_eWDSMt4'/>
+      </div>
 
       <div class="grid-item">2</div>
       <div class="grid-item">CSS</div>
