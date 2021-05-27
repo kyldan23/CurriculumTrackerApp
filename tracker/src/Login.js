@@ -2,7 +2,7 @@ import React from 'react';
 import './Login.css';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 import firebase from 'firebase';
-import { config } from "./test-credentials";
+//import { config } from "./test-credentials";
 const uiConfig = {
   // Popup signin flow rather than redirect flow.
   signInFlow: 'popup',
