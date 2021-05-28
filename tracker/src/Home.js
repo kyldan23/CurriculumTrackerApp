@@ -52,7 +52,7 @@ export default function Home() {
       </div>
 
       <div class="grid-item">8</div>
-      <div class="grid-item">Google Cloud Platform</div>
+      <div class="grid-item-two-lines">Google Cloud Platform</div>
       <div class="grid-video">
         <YtTemplate vidId = 'vACTtmLWiQY'/>
       </div>
@@ -64,7 +64,7 @@ export default function Home() {
       </div>
 
       <div class="grid-item">10</div>
-      <div class="grid-item">Flask + Deployment</div>
+      <div class="grid-item-two-lines">Flask + Deployment</div>
       <div class="grid-video">
         <YtTemplate vidId = 'YFBRVJPhDGY'/>
       </div>
