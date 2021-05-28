@@ -71,9 +71,16 @@ function SignInScreen() {
   if (!isSignedIn) {
     return (
       <div>
-        <h1>My App</h1>
-        <p>Please sign-in:</p>
+        <h2> <img src="https://plextech-berkeley-edu.apphost.ocf.berkeley.edu/images/PTlogo.png" alt="PTlogo.png"></img>
+      <h3>
+        Full-Stack Curriculum 
+        <h1>Please Sign In
+        <h3>
         <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
+        </h3>
+        </h1>
+        </h3>
+        </h2>
       </div>
     );
   }
