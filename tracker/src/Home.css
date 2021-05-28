@@ -37,6 +37,11 @@
   }
 }
 
+.grid-label {
+  color: #ff6700;
+  font-size: 35px;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -65,12 +70,44 @@
 
 .grid-video {
   background-color: #ff6700;
-  padding: 20px;
+
 }
 
-.grid-label {
-  color: #ff6700;
-  font-size: 35px;
+.accordion {
+  display: block; 
+  width: 100%;
+  padding: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #ff6700;
+  color: white;
+  text-align: center;
+  transition: background 0.2s;
+  font-size: 25px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+}
+
+.active, .accordion:hover {
+  color: #1A77E9
+}
+
+/* .video-button::after {
+  content: '\25be';
+  float: right;
+  transform: scale(1.5);
+}
+
+.video-button--active {background: #ff7b00}
+.video-button--active::after {content: '\25b4'} */
+
+.panel {
+  overflow: hidden;
+  background-color: #ffe600;
+  padding: 0 15px;
+  background: #ff6700;
+  
 }
 
 header {
