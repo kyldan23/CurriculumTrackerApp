@@ -3,6 +3,7 @@ import './Login.css';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 import firebase from 'firebase';
 import React, { useEffect, useState } from 'react'; //testing 
+import Home from './Home';
 /*
 const uiConfig = {
   // Popup signin flow rather than redirect flow.
@@ -78,6 +79,7 @@ function SignInScreen() {
   }
   return (
     <div>
+      <Home />
       <h1>My App</h1>
       <p>Welcome {firebase.auth().currentUser.displayName}! You are now signed-in!</p>
       <a onClick={() => firebase.auth().signOut()}>Sign-out</a>
