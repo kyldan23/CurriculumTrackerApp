@@ -86,10 +86,9 @@ function SignInScreen() {
   }
   return (
     <div>
+      <p>Welcome {firebase.auth().currentUser.displayName}! You are now signed-in!
+      <button class="sign-out" onClick={() => firebase.auth().signOut()}>Sign-out</button></p>
       <Home />
-      <h1>My App</h1>
-      <p>Welcome {firebase.auth().currentUser.displayName}! You are now signed-in!</p>
-      <a onClick={() => firebase.auth().signOut()}>Sign-out</a>
     </div>
   );
 }
