@@ -70,18 +70,22 @@ function SignInScreen() {
   if (!isSignedIn) {
     return (
       <div>
-        <h1>My App</h1>
-        <p>Please sign-in:</p>
+        <h2> <img src="https://plextech-berkeley-edu.apphost.ocf.berkeley.edu/images/PTlogo.png" alt="PTlogo.png"></img>
+        </h2>
+      <h3>
+        Full-Stack Curriculum  </h3>
+        <h1>Please Sign In</h1>
+        <h4>
         <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
+        </h4>
       </div>
     );
   }
   return (
     <div>
+      <p>Welcome {firebase.auth().currentUser.displayName}! You are now signed-in!
+      <button className="sign-out" onClick={() => firebase.auth().signOut()}>Sign-out</button></p>
       <Home />
-      <h1>My App</h1>
-      <p>Welcome {firebase.auth().currentUser.displayName}! You are now signed-in!</p>
-      <a onClick={() => firebase.auth().signOut()}>Sign-out</a>
     </div>
   );
 }
