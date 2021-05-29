@@ -24,6 +24,7 @@ img {
 
 .sign-out {
   float: right;
+  padding-right: 10px;
 }
 
 p {
