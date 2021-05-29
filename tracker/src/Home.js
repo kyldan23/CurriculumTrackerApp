@@ -4,7 +4,7 @@ import './Home.css';
 
 export default function Home() {
   return(
-    <body>
+    <div>
     <header> Plextech Full-Stack Curriculum Course Schedule 
     <div class="grid-container">
       <div class="grid-label">Lecture</div>
@@ -82,23 +82,8 @@ export default function Home() {
       </div>
   </div>
   </header> 
-
-  <script>
-    {/* document.querySelectorAll('.video-button').forEach(button => {
-      button.addEventListener('click', () => {
-        const videoContent = button.nextElementSibling;
-
-        button.classList.toggle('video-button--active');
-        
-        if (button.classList.contains('video-button--active')){
-          videoContent.style.maxHeight = videoContent.scrollHeight + 'px';
-        } else{
-          videoContent.style.maxHeight = 0;
-        }
-      })
-    }) */}
-  </script>
-  </body>
+  </div>
+  
   );
 }
 
