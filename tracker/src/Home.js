@@ -1,118 +1,83 @@
 import React from 'react';
-import YtTemplate from './YtTemplate'
+import YtTemplate from './YtTemplate';
 import './Home.css';
+// import Accordion from 'react-bootstrap/Accordion';
 
 export default function Home() {
   return(
-    <body>
-    <header> Plextech Full-Stack Curriculum Course Schedule 
-    <div class="grid-container">
-      <div class="grid-label">Lecture</div>
-      <div class="grid-label">Topic</div>
-      <div class="grid-label">Video</div>
-      <div class="grid-item">1</div>
-      <div class="grid-item">HTML</div>
-      <div class="grid-video">
-        <button class="accordion">Show Video</button>
-        <div class="panel">
+    <div className="encapsulate">
+    <header> Plextech Full-Stack Curriculum Course Schedule </header>
+    <div className="grid-container">
+      <div className="grid-label">Lecture</div>
+      <div className="grid-label">Topic</div>
+      <div className="grid-label">Video</div>
+      <div className="grid-item">1</div>
+      <div className="grid-item">HTML</div>
+      <div className="grid-video">
         <YtTemplate vidId = 'UB1O30fR-EE'/></div>
+
+      <div className="grid-item">2</div>
+      <div className="grid-item">CSS</div>
+      <div className="grid-video">
+        <YtTemplate vidId = 'yfoY53QXEnI'/>
       </div>
 
-      <div class="grid-item">2</div>
-      <div class="grid-item">CSS</div>
-      <div class="grid-video">
-        <button class="accordion">Show Video</button>
-        <div class="panel">
-        <YtTemplate vidId = 'yfoY53QXEnI'/></div>
-      </div>
-
-      <div class="grid-item">3</div>
-      <div class="grid-item">JavaScript</div> 
-      <div class="grid-video">
-        <button class="accordion">Show Video</button>
-        <div class="panel">
-        <YtTemplate vidId = 'hdI2bqOjy3c'/></div>
+      <div className="grid-item">3</div>
+      <div className="grid-item">JavaScript</div> 
+      <div className="grid-video">
+        <YtTemplate vidId = 'hdI2bqOjy3c'/>
       </div>
       
-      <div class="grid-item">5</div>
-      <div class="grid-item">React</div>
-      <div class="grid-video">
-        <button class="accordion">Show Video</button>
-        <div class="panel">
-        <YtTemplate vidId = 'w7ejDZ8SWv8'/></div>
+      <div className="grid-item">5</div>
+      <div className="grid-item">React</div>
+      <div className="grid-video">
+        <YtTemplate vidId = 'w7ejDZ8SWv8'/>
       </div>
 
-      <div class="grid-item">6</div>
-      <div class="grid-item">NodeJS</div>
-      <div class="grid-video">
-        <button class="accordion">Show Video</button>
-        <div class="panel">
-        <YtTemplate vidId = 'TlB_eWDSMt4'/></div></div>
+      <div className="grid-item">6</div>
+      <div className="grid-item">NodeJS</div>
+      <div className="grid-video">
+        <YtTemplate vidId = 'TlB_eWDSMt4'/></div>
 
-      <div class="grid-item">7</div>
-      <div class="grid-item">Firebase</div>
-      <div class="grid-video">
-        <button class="accordion">Show Video</button>
-        <div class="panel">
-        <YtTemplate vidId = '9kRgVxULbag'/></div>
+      <div className="grid-item">7</div>
+      <div className="grid-item">Firebase</div>
+      <div className="grid-video">
+        <YtTemplate vidId = '9kRgVxULbag'/>
       </div>
 
-      <div class="grid-item">8</div>
-      <div class="grid-item-two-lines">Google Cloud Platform</div>
-      <div class="grid-video">
-        <button class="accordion">Show Video</button>
-        <div class="panel">
-        <YtTemplate vidId = 'vACTtmLWiQY'/></div>
+      <div className="grid-item">8</div>
+      <div className="grid-item">Google Cloud Platform</div>
+      <div className="grid-video">
+        <YtTemplate vidId = 'vACTtmLWiQY'/>
       </div>
 
-      <div class="grid-item">9</div>
-      <div class="grid-item">Django</div>
-      <div class="grid-video">
-        <button class="accordion">Show Video</button>
-        <div class="panel">
-        <YtTemplate vidId = 'e1IyzVyrLSU'/></div>
+      <div className="grid-item">9</div>
+      <div className="grid-item">Django</div>
+      <div className="grid-video">
+        <YtTemplate vidId = 'e1IyzVyrLSU'/>
       </div>
 
-      <div class="grid-item">10</div>
-      <div class="grid-item-two-lines">Flask + Deployment</div>
-      <div class="grid-video">
-        <button class="accordion">Show Video</button>
-        <div class="panel">
-        <YtTemplate vidId = 'YFBRVJPhDGY'/></div>
+      <div className="grid-item">10</div>
+      <div className="grid-item">Flask + Deployment</div>
+      <div className="grid-video">
+        <YtTemplate vidId = 'YFBRVJPhDGY'/>
       </div>
   </div>
-  </header> 
-
-  <script>
-    {/* document.querySelectorAll('.video-button').forEach(button => {
-      button.addEventListener('click', () => {
-        const videoContent = button.nextElementSibling;
-
-        button.classList.toggle('video-button--active');
-        
-        if (button.classList.contains('video-button--active')){
-          videoContent.style.maxHeight = videoContent.scrollHeight + 'px';
-        } else{
-          videoContent.style.maxHeight = 0;
-        }
-      })
-    }) */}
-  </script>
-  </body>
+  </div>
   );
 }
 
-    var acc = document.getElementsByClassName("accordion");
-    var i;
+    // var acc = document.getElementsByClassName("accordion");
+    // var i;
 
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-          panel.style.display = "none";
-        } else {
-          panel.style.display = "block";
-        }
-      });
-    }
+    // for (i = 0; i < acc.length; i++) {
+    //   acc[i].addEventListener("click", function() {
+    //     this.classList.toggle("active");
+    //     var panel = this.nextElementSibling;
+    //     if (panel.style.display === "block") {
+    //       panel.style.display = "none";
+    //     } else {
+    //       panel.style.display = "block";
+    //     }
+    //   });
+    // }

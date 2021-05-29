@@ -2,7 +2,7 @@ h1 {
   color: #ff6700;
   font-size: 35px;
   padding: 15px;
-  align-items: center;
+  text-align: center;
 }
 
 h2 {
@@ -32,4 +32,6 @@ p {
   font-size: 15px;
   padding-left: 10px;
   padding-right: 10px;
+  text-align: left;
+  font-weight: normal;
 }
